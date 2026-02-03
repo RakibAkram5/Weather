@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#71C5EC"
+    tools:context=".MainActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather App"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <!-- City Input -->
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="270dp"
+        android:layout_height="72dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="#D71958"
+        android:hint="Enter City"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:inputType="text" />
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Search"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#D71958" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="30dp"
+        android:textFontWeight="500"
+        android:textStyle="bold"
+        android:background="#D870EA"
+        android:textColor="@color/white"
+
+        />
+
+</RelativeLayout>
